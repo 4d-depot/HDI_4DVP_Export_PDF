@@ -1,0 +1,40 @@
+//%attributes = {}
+C_BOOLEAN:C305($1;$isEnable)
+
+$isEnable:=$1
+
+OBJECT SET ENABLED:C1123(*;"Check Box";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Check Box1";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Check Box2";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Check Box3";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Check Box4";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Check Box5";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Check Box6";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Check Box7";$isEnable)
+
+OBJECT SET ENABLED:C1123(*;"Input";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input1";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input2";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input3";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input4";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input5";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input6";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input7";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input8";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input9";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input10";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input11";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input12";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input13";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Input14";$isEnable)
+
+OBJECT SET ENABLED:C1123(*;"Button";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Button1";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Button2";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Button3";$isEnable)
+
+OBJECT SET ENABLED:C1123(*;"Popup Dropdown List";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Popup Dropdown List1";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Popup Dropdown List2";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Popup Dropdown List3";$isEnable)
+OBJECT SET ENABLED:C1123(*;"Popup Dropdown List4";$isEnable)

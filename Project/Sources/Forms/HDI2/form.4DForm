@@ -1,0 +1,654 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"width": 920,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 22,
+					"left": 23,
+					"width": 879,
+					"height": 679,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 119,
+					"left": 51,
+					"width": 828,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/information.4dm"
+				}
+			},
+			"entryOrder": []
+		},
+		{
+			"objects": {
+				"ViewProArea": {
+					"type": "view",
+					"left": 36,
+					"top": 409,
+					"width": 852,
+					"height": 268,
+					"userInterface": "none",
+					"withFormulaBar": true,
+					"events": [
+						"onVPReady"
+					],
+					"method": "ObjectMethods/ViewProArea.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Best fit columns",
+					"top": 81,
+					"left": 382,
+					"width": 172,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.pdf.bestFitColumns",
+					"tooltip": "if selected, specifies that column widths are adjusted to fit the longest text width for printing. ",
+					"sizingY": "fixed"
+				},
+				"Button": {
+					"type": "button",
+					"text": "PDF Export",
+					"top": 375,
+					"left": 794,
+					"width": 94,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"sizingY": "fixed"
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Print",
+					"top": 345,
+					"left": 794,
+					"width": 94,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"sizingY": "fixed"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Best fit rows",
+					"top": 103,
+					"left": 382,
+					"width": 172,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.pdf.bestFitRows",
+					"tooltip": "if selected, specifies that row heights are adjusted to fit the tallest text height for printing. ",
+					"sizingY": "fixed"
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"text": "Black and white",
+					"top": 125,
+					"left": 382,
+					"width": 172,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.pdf.blackAndWhite",
+					"tooltip": "if selected, specifies that printing will be in black and white. ",
+					"sizingY": "fixed"
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"text": "Show border",
+					"top": 147,
+					"left": 382,
+					"width": 172,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.pdf.showBorder",
+					"action": "",
+					"tooltip": "if selected, specifies that there will be an outline border around the entire control. ",
+					"sizingY": "fixed"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"text": "Show grid line",
+					"top": 168,
+					"left": 382,
+					"width": 172,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.pdf.showGridLine",
+					"tooltip": "Gets or sets whether to print the grid lines. ",
+					"sizingY": "fixed"
+				},
+				"Check Box5": {
+					"type": "checkbox",
+					"text": "Use max",
+					"top": 189,
+					"left": 382,
+					"width": 172,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "boolean",
+					"dataSource": "Form:C1466.pdf.useMax",
+					"tooltip": "if selected, specifies that only rows and columns that contain data will be printed. ",
+					"sizingY": "fixed"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Centering:",
+					"top": 86,
+					"left": 619,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 739,
+					"top": 84,
+					"width": 149,
+					"height": 19,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "PrintCentering",
+					"sizingY": "fixed"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Orientation:",
+					"top": 113,
+					"left": 619,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Popup Dropdown List1": {
+					"type": "dropdown",
+					"left": 739,
+					"top": 111,
+					"width": 149,
+					"height": 19,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "PrintPageOrientation",
+					"sizingY": "fixed"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Page order:",
+					"top": 140,
+					"left": 619,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Popup Dropdown List2": {
+					"type": "dropdown",
+					"left": 739,
+					"top": 138,
+					"width": 149,
+					"height": 19,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "PrintPageOrder",
+					"sizingY": "fixed"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Column header:",
+					"top": 167,
+					"left": 619,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Popup Dropdown List3": {
+					"type": "dropdown",
+					"left": 739,
+					"top": 165,
+					"width": 149,
+					"height": 19,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "PrintColumnHeader",
+					"sizingY": "fixed"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Row header:",
+					"top": 194,
+					"left": 619,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Popup Dropdown List4": {
+					"type": "dropdown",
+					"left": 739,
+					"top": 192,
+					"width": 149,
+					"height": 19,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "PrintRowHeader",
+					"sizingY": "fixed"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Column start:",
+					"top": 87,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Row start:",
+					"top": 107,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input": {
+					"type": "input",
+					"left": 157,
+					"top": 85,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.columnStart",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the first column to print when printing a cell range",
+					"sizingY": "fixed"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 157,
+					"top": 106,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.rowStart",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the first row to print when printing a cell range",
+					"sizingY": "fixed"
+				},
+				"Text7": {
+					"type": "text",
+					"text": "Column end:",
+					"top": 128,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 157,
+					"top": 127,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.columnEnd",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the last column to print when printing a cell range",
+					"sizingY": "fixed"
+				},
+				"Text8": {
+					"type": "text",
+					"text": "Row end:",
+					"top": 150,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input3": {
+					"type": "input",
+					"left": 157,
+					"top": 149,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.rowEnd",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the last row to print when printing a cell range",
+					"sizingY": "fixed"
+				},
+				"Text9": {
+					"type": "text",
+					"text": "Fit pages tall:",
+					"top": 172,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input4": {
+					"type": "input",
+					"left": 157,
+					"top": 171,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.fitPagesTall",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the number of vertical pages to check when optimizing printing",
+					"sizingY": "fixed"
+				},
+				"Text10": {
+					"type": "text",
+					"text": "Fit pages wide:",
+					"top": 194,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input5": {
+					"type": "input",
+					"left": 157,
+					"top": 193,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.fitPagesWide",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the number of horizontal pages to check when optimizing the printing",
+					"sizingY": "fixed"
+				},
+				"Text11": {
+					"type": "text",
+					"text": "Zoom factor:",
+					"top": 216,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input6": {
+					"type": "input",
+					"left": 157,
+					"top": 215,
+					"width": 115,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.zoomFactor",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the zoom factor used for printing",
+					"sizingY": "fixed"
+				},
+				"Text12": {
+					"type": "text",
+					"text": "Left header:",
+					"top": 246,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Text13": {
+					"type": "text",
+					"text": "Right header:",
+					"top": 246,
+					"left": 647,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Text14": {
+					"type": "text",
+					"text": "Center header:",
+					"top": 246,
+					"left": 341,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input7": {
+					"type": "input",
+					"left": 36,
+					"top": 269,
+					"width": 241,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.headerLeft",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the text and format of the left header on printed pages. ",
+					"contextMenu": "none",
+					"multiline": "no",
+					"sizingY": "fixed"
+				},
+				"Input8": {
+					"type": "input",
+					"left": 341,
+					"top": 269,
+					"width": 241,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.headerCenter",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the text and format of the center header on printed pages. ",
+					"contextMenu": "none",
+					"multiline": "no",
+					"sizingY": "fixed"
+				},
+				"Input9": {
+					"type": "input",
+					"left": 647,
+					"top": 269,
+					"width": 241,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.headerRight",
+					"dataSourceTypeHint": "integer",
+					"tooltip": " Sets the text and format of the right header on printed pages. ",
+					"contextMenu": "none",
+					"multiline": "no",
+					"sizingY": "fixed"
+				},
+				"Text15": {
+					"type": "text",
+					"text": "Left footer:",
+					"top": 296,
+					"left": 36,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Text16": {
+					"type": "text",
+					"text": "Right footer:",
+					"top": 296,
+					"left": 647,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Text17": {
+					"type": "text",
+					"text": "Center footer:",
+					"top": 296,
+					"left": 341,
+					"width": 116,
+					"height": 15,
+					"sizingY": "fixed"
+				},
+				"Input10": {
+					"type": "input",
+					"left": 36,
+					"top": 319,
+					"width": 241,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.footerLeft",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the text and format of the left footer on printed pages. ",
+					"contextMenu": "none",
+					"multiline": "no",
+					"sizingY": "fixed"
+				},
+				"Input11": {
+					"type": "input",
+					"left": 341,
+					"top": 319,
+					"width": 241,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.footerCenter",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the text and format of the center footer on printed pages. ",
+					"contextMenu": "none",
+					"multiline": "no",
+					"sizingY": "fixed"
+				},
+				"Input12": {
+					"type": "input",
+					"left": 647,
+					"top": 319,
+					"width": 241,
+					"height": 16,
+					"dataSource": "Form:C1466.pdf.footerRight",
+					"dataSourceTypeHint": "integer",
+					"tooltip": "Sets the text and format of the right footer on printed pages. ",
+					"contextMenu": "none",
+					"multiline": "no",
+					"sizingY": "fixed"
+				},
+				"Input13": {
+					"type": "input",
+					"left": 341,
+					"top": 379,
+					"width": 401,
+					"height": 16,
+					"dataSource": "Form:C1466.pdfPath",
+					"sizingY": "fixed"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "...",
+					"top": 375,
+					"left": 749,
+					"width": 33,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"sizingY": "fixed"
+				},
+				"Input14": {
+					"type": "input",
+					"left": 341,
+					"top": 349,
+					"width": 401,
+					"height": 16,
+					"dataSource": "Form:C1466.watermarkPath",
+					"sizingY": "fixed",
+					"tooltip": "Prints any background image as a watermark."
+				},
+				"Button2": {
+					"type": "button",
+					"text": "...",
+					"top": 345,
+					"left": 749,
+					"width": 33,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"sizingY": "fixed"
+				},
+				"Text18": {
+					"type": "text",
+					"text": "Watermark picture:",
+					"top": 350,
+					"left": 55,
+					"width": 224,
+					"height": 15,
+					"textAlign": "right",
+					"sizingY": "fixed"
+				},
+				"Text19": {
+					"type": "text",
+					"text": "PDF name or file path:",
+					"top": 380,
+					"left": 55,
+					"width": 224,
+					"height": 15,
+					"textAlign": "right",
+					"sizingY": "fixed"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}
